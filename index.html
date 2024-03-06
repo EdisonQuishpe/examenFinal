@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="fotter.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        /* Agrega aquí el estilo de tu página */
+        #mititulo {
+            background-color: #4184b1;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-form {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .precios {
+            color: #c9baba;
+        }
+
+        .precios h2 {
+            font-size: 16px;
+        }
+
+        .btn-hamburguesa {
+            display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .btn-hamburguesa {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .menu-activo {
+                background-color: rgba(201, 195, 195, 0.782);
+                border: 1px solid #000;
+                padding: 10px;
+                position: absolute;
+                top: 1px;
+                right: 0;
+                width: 200px;
+                z-index: 200;
+                box-sizing: border-box;
+                animation: slideDown 0.3s ease;
+            }
+
+            .menu-activo {
+                display: block !important;
+            }
+
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        
+
+      
+    </header>
+    
+
+   
+
+
+    <div class="container container-form">
+        <form>
+            <div class="container">
+                <h3>Registrar Estudiantes</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="id" class="col-form-label">id</label>
+                            </td>
+                            <td>
+                                <input id='id' class="form-control" placeholder='identificador' type="text"
+                                    name="id" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="nombre" class="col-form-label">Nombre</label>
+                            </td>
+                            <td>
+                                <input id='nombre' class="form-control" placeholder='nombre' type="text"
+                                    name="nombre" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="direccion" class="col-form-label">Dirección</label>
+                            </td>
+                            <td>
+                                <input id='direccion' class="form-control" placeholder='disreccion'
+                                    type="text" name="direccion" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for='telefono' class="col-form-label">Telefono</label>
+                            </td>
+                            <td>
+                                <input id='telefono' name='telefono' class="form-control" placeholder='telefono'
+                                    type="text" required />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+                
+                <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+
+
+    </div>
+
+    
+    <br><br>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include jQuery Validation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    
+   
+    <script src="app.js" defer></script>
+
+    <header>
+        
+        <button id="listStudentsButton">Listar Estudiantes</button>
+    </header>
+
+
+</body>
+
+</html>
+
+
+
+
+   
